@@ -1,8 +1,49 @@
+/*Francisco*/
+#section {
+    background-color: #f8f9fa; 
+    padding: 40px 20px; 
+    display: flex;
+    justify-content: center; 
+}
 
-/* estilo carrito*/
+.row {
+    max-width: 1200px; 
+    width: 100%; 
+    margin: 0 auto; 
+}
 
+.card {
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; 
+}
+
+.card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.card-img-top {
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    object-fit: cover; 
+    height: 200px; 
+}
+
+.card-title {
+    font-size: 1.25rem; 
+    font-weight: bold; 
+    color: #333; 
+}
+
+.card-text {
+    color: #555; 
+    line-height: 1.6; 
+}
 
 /*Navbar */
+
+/* estilo carrito yanira*/
 .navbar-custom {
     background-color: #e26445; /* Cambia este color por el que prefieras */
 }
@@ -35,3 +76,16 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 1000;
   }
+
+/* ejemplo de scope */
+/* el css dentro del scope solo afectara a los elementos hijos del id indicado
+@scope (#compra-ticket-main){
+    input, select, button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+}
+*/

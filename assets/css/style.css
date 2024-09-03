@@ -1,0 +1,79 @@
+/*Francisco*/
+#section {
+    background-color: #f8f9fa; 
+    padding: 40px 20px; 
+    display: flex;
+    justify-content: center; 
+}
+
+.row {
+    max-width: 1200px; 
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+.card {
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; 
+}
+
+.card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.card-img-top {
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+    object-fit: cover; 
+    height: 200px; 
+}
+
+.card-title {
+    font-size: 1.25rem; 
+    font-weight: bold; 
+    color: #333; 
+}
+
+.card-text {
+    color: #555; 
+    line-height: 1.6; 
+}
+
+
+/* estilo carrito yanira*/
+.navbar-custom {
+    background-color: #0d47b3; /* Cambia este color por el que prefieras */
+}
+
+.navbar-brand {
+    color: rgb(240, 225, 225);
+}
+
+#shopping-cart {
+    position: fixed;
+    top: 20%; /* Puedes ajustar este valor para cambiar la altura inicial del carrito */
+    right: 5%;
+    width: 300px;
+    height: 60vh; /* Fija la altura para que se vea completa y sea scrollable */
+    overflow-y: auto; /* Añade scroll interno si el contenido supera la altura */
+    background-color:rgb(205, 94, 50);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+
+/* ejemplo de scope */
+/* el css dentro del scope solo afectara a los elementos hijos del id indicado
+@scope (#compra-ticket-main){
+    input, select, button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+}
+*/

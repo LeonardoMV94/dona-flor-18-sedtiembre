@@ -16,6 +16,9 @@
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; 
+    /* Ajusta el tamaño de la tarjeta aquí */
+    max-width: 220px; /* Ajusta el tamaño de la tarjeta para adaptarse a 4 columnas */
+    margin: 0 auto; 
 }
 
 .card:hover {
@@ -27,19 +30,35 @@
     border-top-left-radius: 10px; 
     border-top-right-radius: 10px; 
     object-fit: cover; 
-    height: 200px; 
+    height: 150px; /* Ajusta la altura de la imagen aquí */
+}
+
+.card-body {
+    padding: 10px; /* Ajusta el padding aquí */
 }
 
 .card-title {
-    font-size: 1.25rem; 
+    font-size: 1rem; /* Ajusta el tamaño del texto aquí */
     font-weight: bold; 
     color: #333; 
 }
 
 .card-text {
+    font-size: 0.875rem; /* Ajusta el tamaño del texto aquí */
     color: #555; 
-    line-height: 1.6; 
+    line-height: 1.4; /* Ajusta el line-height aquí */
 }
+
+.card-price {
+    font-size: 0.875rem; /* Ajusta el tamaño del texto aquí */
+    font-weight: bold;
+    margin: 10px 0; 
+}
+
+.btn {
+    font-size: 0.875rem; /* Ajusta el tamaño del botón aquí */
+}
+
 
 
 /* estilo carrito yanira*/

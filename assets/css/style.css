@@ -16,8 +16,8 @@
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; 
-    /* Ajusta el tamaño de la tarjeta aquí */
-    max-width: 220px; /* Ajusta el tamaño de la tarjeta para adaptarse a 4 columnas */
+    
+    max-width: 220px;
     margin: 0 auto; 
 }
 
@@ -30,33 +30,32 @@
     border-top-left-radius: 10px; 
     border-top-right-radius: 10px; 
     object-fit: cover; 
-    height: 150px; /* Ajusta la altura de la imagen aquí */
+    height: 150px; 
 }
 
 .card-body {
-    padding: 10px; /* Ajusta el padding aquí */
+    padding: 10px; 
 }
 
 .card-title {
-    font-size: 1rem; /* Ajusta el tamaño del texto aquí */
+    font-size: 1rem; 
     font-weight: bold; 
     color: #333; 
 }
 
 .card-text {
-    font-size: 0.875rem; /* Ajusta el tamaño del texto aquí */
+    font-size: 0.875rem; 
     color: #555; 
-    line-height: 1.4; /* Ajusta el line-height aquí */
+    line-height: 1.4; 
 }
-
 .card-price {
-    font-size: 0.875rem; /* Ajusta el tamaño del texto aquí */
+    font-size: 0.875rem; 
     font-weight: bold;
     margin: 10px 0; 
 }
 
 .btn {
-    font-size: 0.875rem; /* Ajusta el tamaño del botón aquí */
+    font-size: 0.875rem; 
 }
 
 

@@ -40,4 +40,40 @@
     color: #555; 
     line-height: 1.6; 
 }
-/*Francisco*/
+
+
+/* estilo carrito yanira*/
+.navbar-custom {
+    background-color: #0d47b3; /* Cambia este color por el que prefieras */
+}
+
+.navbar-brand {
+    color: rgb(240, 225, 225);
+}
+
+#shopping-cart {
+    position: fixed;
+    top: 20%; /* Puedes ajustar este valor para cambiar la altura inicial del carrito */
+    right: 5%;
+    width: 300px;
+    height: 60vh; /* Fija la altura para que se vea completa y sea scrollable */
+    overflow-y: auto; /* Añade scroll interno si el contenido supera la altura */
+    background-color:rgb(205, 94, 50);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+
+/* ejemplo de scope */
+/* el css dentro del scope solo afectara a los elementos hijos del id indicado
+@scope (#compra-ticket-main){
+    input, select, button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+}
+*/

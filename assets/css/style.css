@@ -191,3 +191,28 @@
     }
 }
 */
+
+/* Footer  */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+footer .container-fluid {
+    background: -webkit-linear-gradient(right, #ec1f04, #1c5eb6); /* Para navegadores WebKit */
+    background: -moz-linear-gradient(right, #ec1f04, #1c5eb6); /* Para Firefox */
+    background: -o-linear-gradient(right, #ec1f04, #1c5eb6); /* Para Opera */
+    background: linear-gradient(to right, #ec1f04, #1c5eb6); /* Para navegadores modernos */
+    color: white;
+}
+
+
+footer .btn:hover{
+    background-color: #0c0c0c;
+}
+.donaflor-cont{
+    background-color: white;
+    width: auto;
+    height: 110px;
+}
+.donaflor{
+    font-family: 'Playfair Display';
+    color: rgb(221, 49, 141);
+}

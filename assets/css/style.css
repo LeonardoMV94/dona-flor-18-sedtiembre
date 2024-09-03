@@ -1,12 +1,26 @@
 
 /* estilo carrito*/
+
+
+/*Navbar */
 .navbar-custom {
-    background-color: #0d47b3; /* Cambia este color por el que prefieras */
+    background-color: #e26445; /* Cambia este color por el que prefieras */
 }
 
-.navbar-brand {
-    color: rgb(240, 225, 225);
+.navbar-brand img {
+    height: 60px; /* Ajusta el tamaño según tus necesidades */
+    width: 120px;
 }
+
+.navbar-nav .nav-link {
+    color: white; /* Cambia el color del texto a blanco */
+}
+
+.navbar-toggler {
+    color: white; /* Cambia el color del icono del botón */
+    border-color: white; /* Cambia el color del borde del botón */
+}
+
 
 #shopping-cart {
     position: fixed;

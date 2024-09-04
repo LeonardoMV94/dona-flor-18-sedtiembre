@@ -232,21 +232,21 @@ const productos = [
   //bebestibles
   {
     nombre: "Bebidas",
-    urlImagen: "",
+    urlImagen: "assets/img/bebidas.jpg",
     descripcion: "Bebidas de fantasia diferentes sabores 350ml.",
     precio: 1500,
     categoria: "Bebestibles"
   },
   {
     nombre: "Agua mineral",
-    urlImagen: "",
+    urlImagen: "assets/img/mineral.jpg",
     descripcion: "Agua mineral con gas y sin gas 500ml",
     precio: 1000,
     categoria: "Bebestibles"
   },
   {
     nombre: "Jugos naturales",
-    urlImagen: "",
+    urlImagen: "assets/img/jugosNaturales.jpg",
     descripcion: "Jugos Natural de frutas (piña, frambuesa, frutilla, mango n",
     precio:2000,
     categoria: "Bebestibles"

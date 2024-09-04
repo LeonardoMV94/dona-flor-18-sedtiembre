@@ -74,7 +74,7 @@ class ListadoProductos {
                                 <h5 class="card-title">${producto.nombre}</h5>
                                 <p class="card-text">${producto.descripcion}</p>
                                 <p class="card-price">Precio: ${producto.precio}</p>
-                                <a href="#" class="btn btn-primary">Agregar</a> falta añadir metodos a la clase carrito, para que dentro del mismo tengo un array de productos
+                                <a href="#" class="btn btn-primary">Agregar</a>
                             </div>
                             </div>
                         </div>`;
@@ -170,7 +170,7 @@ const productos = [
     descripcion:
       "Pan con chorizo a la parrilla, a menudo acompañado de pebre (salsa de tomate y cilantro.",
     precio: 2000,
-    categoria: "Entrada"
+    categoria: "Entradas"
   },
   {
     nombre: "Cordero asado",
@@ -178,6 +178,7 @@ const productos = [
     descripcion:
       "Carne de cordero cocida a la parrilla o al horno, con un sabor ahumado y jugoso, frecuentemente sazonada con hierbas y especias.",
     precio: 6000,
+    categoria: "Comidas"
   },
   {
     nombre: "Empanadas",
@@ -185,6 +186,7 @@ const productos = [
     descripcion:
       "Masa rellena con carne, cebolla y huevo, luego horneada o frita.",
     precio: 2500,
+    categoria: "Entradas"
   },
   {
     nombre: "Humitas",
@@ -192,6 +194,7 @@ const productos = [
     descripcion:
       "Masa de maíz cocida al vapor, mezclada con cebolla y albahaca, envuelta en hojas demaíz.",
     precio: 1500,
+    categoria: "Comidas"
   },
   {
     nombre: "Pastel de Choclo",
@@ -199,6 +202,7 @@ const productos = [
     descripcion:
       "Pastel de carne (vacuno y pollo) cubierto con un puré de maíz dulce, horneado hasta dorarse",
     precio: 4000,
+    categoria: "Comidas"
   },
   {
     nombre: "Sopaipillas",
@@ -206,6 +210,7 @@ const productos = [
     descripcion:
       "Masa frita de zapallo, crujiente por fuera y suave por dentro, a menudo servida con pebre o azúcar.",
     precio: 500,
+    categoria: "Entradas"
   },
   {
     nombre: "Terremoto",
@@ -213,6 +218,7 @@ const productos = [
     descripcion:
       "Cóctel chileno hecho con pipeño (vino dulce), helado de piña y un toque de granadina,servido en un vaso grande",
     precio: 7000,
+    categoria: "Bebestibles"
   },
   {
     nombre: "Porotos con riendas",
@@ -220,31 +226,36 @@ const productos = [
     descripcion:
       "Porotos con riendas es un plato chileno que mezcla frijoles, zapallo, fideos y longaniza en un guiso reconfortante.",
     precio: 8500,
+    categoria: "Comidas"
   },
   //bebestibles
   {
     nombre: "Bebidas",
-    urlImagen: "assets/img/sopaipillas.jpg",
+    urlImagen: "",
     descripcion: "Bebidas de fantasia diferentes sabores 350ml.",
     precio: 1500,
+    categoria: "Bebestibles"
   },
   {
     nombre: "Agua mineral",
-    urlImagen: "assets/img/terremoto.jpg",
+    urlImagen: "",
     descripcion: "Agua mineral con gas y sin gas 500ml",
     precio: 1000,
+    categoria: "Bebestibles"
   },
   {
     nombre: "Jugos naturales",
-    urlImagen: "assets/img/porotos.jpg",
+    urlImagen: "",
     descripcion: "Jugos Natural de frutas (piña, frambuesa, frutilla, mango n",
     precio:2000,
+    categoria: "Bebestibles"
   },
  {
     nombre: "Terremoto XL",
     urlImagen: "assets/img/terremoto.jpg",
     descripcion: "Pipeño, granadina y helado de piña", 
    precio: 3000 ,
+   categoria: "Bebestibles"
  },
 
  {
@@ -252,6 +263,7 @@ const productos = [
   urlImagen: "assets/img/borgona.jpg",
   descripcion: "Vino tinto con frutilla y azucar flor", 
  precio: 3000 ,
+ categoria: "Bebestibles"
 },
 
 {
@@ -259,33 +271,33 @@ const productos = [
   urlImagen: "assets/img/moteHuesillos.jpg",
   descripcion: "mezcla de jugo acaramelado de durazno, con mote de trigo y duraznos deshidratados", 
  precio: 3000 ,
+ categoria: "Bebestibles"
 },
 
+{
+  nombre: "Piscola",
+  urlImagen: "assets/img/piscola.jpg",
+  descripcion: "Pisco y bebida", 
+ precio: 3000 ,
+ categoria: "Bebestibles"
+},
 
+{
+  nombre: "Piso Sour",
+  urlImagen: "assets/img/piscoSour.jpg",
+  descripcion: "El pisco sour es un cóctel preparado con pisco y zumo de limón.", 
+ precio: 3000 ,
+ categoria: "Bebidas"
+},
 
 
 
 ];
 
-//crear el carrito
+//crear el carrito -> esto se hace en query.js o se refactoriza y se migra a javascript puro
 
-// let carrito = new Carrito();
 
-// //agregar productos al carrito
-// carrito.agregarProducto(producto1);
-// carrito.agregarProducto(producto2);
-// carrito.agregarProducto(producto3);
-// carrito.agregarProducto(producto4);
-
-// //mostrar productos
-
-// // carrito.mostrarProducto();
-
-// //sumar productos
-
-// carrito.calcularTotal();
-
-// crear Productos
+// crear html de Productos
 const listadoProductos = new ListadoProductos();
 for (const producto of productos) {
   listadoProductos.addProductos(producto);

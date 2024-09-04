@@ -1,0 +1,64 @@
+{
+	"folders": [
+		{
+			"path": "../ConsM2"
+		},
+		{
+			"path": "../EjM2S10"
+		},
+		{
+			"path": "../EvM2S4 Gatos"
+		},
+		{
+			"path": "../EvM2S5 SKYP"
+		},
+		{
+			"path": "../EvM2S6 AeroVia Express"
+		},
+		{
+			"path": "../ProyectoCIne"
+		},
+		{
+			"path": "../EvM2S9 Lista deTareas"
+		},
+		{
+			"path": "../EvM2S10 Aerolineas SKYP II"
+		},
+		{
+			"path": "../respons CuadroColores"
+		},
+		{
+			"path": "../EjM3S1"
+		},
+		{
+			"path": "../Act28Ago24"
+		},
+		{
+			"path": "../ListaEmbarques"
+		},
+		{
+			"path": "../aeropuerto-example"
+		},
+		{
+			"path": "../Codigos de Uso"
+		},
+		{
+			"path": "../EvM3S1"
+		},
+		{
+			"path": "../EvM3S2 Calculadora"
+		},
+		{
+			"path": "../EvM3S2 CuentaFinalDsctos"
+		},
+		{
+			"path": "../EjM3S3 PatagoniaTravel"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "aeropuerto-example"
+	}
+}

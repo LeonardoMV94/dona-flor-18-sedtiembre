@@ -24,6 +24,7 @@ function getDiasRestantesPara18() {
 }
 
 const dias18 = document.querySelector("#dias-18");
+
 setInterval(() => {
   const { dias, horas, minutos } = getDiasRestantesPara18();
   if(minutos == 0){

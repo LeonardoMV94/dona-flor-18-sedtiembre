@@ -348,3 +348,8 @@ footer .btn:hover {
   border-radius: 8px; /* Opcional: añade bordes redondeados a la imagen */
 }
 
+/* Estilos listado del carrito*/
+
+#cart-items {
+  color: white;
+}

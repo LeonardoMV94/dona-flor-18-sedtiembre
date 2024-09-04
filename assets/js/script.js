@@ -65,7 +65,7 @@ class ListadoProductos {
   generateHtml() {
     const listadoProductos = document.querySelector("#listado-productos");
     let templateProdocto = "";
-    for (const producto of this.productos) {
+    this.productos.forEach((producto, index) => {
       templateProdocto = `
                         <div class="col">
                             <div class="card h-100">
@@ -75,13 +75,32 @@ class ListadoProductos {
                                 <p class="card-text">${producto.descripcion}</p>
                                 <p class="card-category">Categoría: ${producto.categoria}</p>
                                 <p class="card-price">Precio: ${producto.precio}</p>
-                                <a href="#" class="btn btn-primary">Agregar</a>
+                                 <button class="btn btn-primary" onclick="agregarPorIndex(${index})">Agregar</button>
+                                
+                            </div>
+                            </div>
+                        </div>`;
+                        listadoProductos.innerHTML += templateProdocto;
+                        templateProdocto = ''                  
+    });
+   //Lo de abajo lo comenté porque buscaba agregar el indice del arreglo al codigo para poder agregar los productos al carro - JR
+    /*  for (const producto of this.productos) {
+      templateProdocto = `
+                        <div class="col">
+                            <div class="card h-100">
+                            <img src="${producto.urlImagen}" class="card-img-top" alt="${producto.nombre}">
+                            <div class="card-body">
+                                <h5 class="card-title">${producto.nombre}</h5>
+                                <p class="card-text">${producto.descripcion}</p>
+                                <p class="card-category">Categoría: ${producto.categoria}</p>
+                                <p class="card-price">Precio: ${producto.precio}</p>
+                                <a href="#" id="nse${productos.length}" class="btn btn-primary">Agregar</a>
                             </div>
                             </div>
                         </div>`;
       listadoProductos.innerHTML += templateProdocto;
       templateProdocto = ''
-    }
+    } */
   }
 }
 
@@ -125,11 +144,6 @@ class Carrito {
   }
 }
 
-//objetos (productos)
-// let producto1 = new Producto('Empanada de Pino',2500);
-// let producto2 = new Producto('Empanada VeRgana', 10000);
-// let producto3 = new Producto('Empanada de Pino sin Pasas', 2200);
-// let producto4 = new Producto('Anticucho', 5000)
 
 const productos = [
   //comida
@@ -302,7 +316,7 @@ const productos = [
 {
   nombre: "Melon con Vino",
   urlImagen: "assets/img/melvin.webp",
-  descripcion: "Vino Tinto ", 
+  descripcion: "Vino blanco inmerso en una dulce capa de melon tuna ", 
  precio: 3000 ,
  categoria: "Bebestibles"
 },
@@ -310,11 +324,35 @@ const productos = [
 
 //crear el carrito -> esto se hace en query.js o se refactoriza y se migra a javascript puro
 
+//Se crea carrito y se actualiza cart-count de la esquina - JR
+let carrito = new Carrito();
+function agregarPorIndex(indice){
+carrito.agregarProducto(productos[indice], 1);
+
+let cuentaCarrito = document.getElementById("cart-count");
+cuentaCarrito.innerHTML =  "("+carrito.productos.length+")";
+let listadoCarrito = document.getElementById('cart-items');
+listadoCarrito.innerHTML = "";
+for(i=0;i<carrito.productos.length;i++){
+const li = document.createElement('li');
+console.log(carrito.productos[i].nombre);
+li.textContent = carrito.productos[i].nombre + "- $" + carrito.productos[i].precio;
+listadoCarrito.appendChild(li);
+}
+
+}
+
+
 
 // crear html de Productos
 const listadoProductos = new ListadoProductos();
 for (const producto of productos) {
   listadoProductos.addProductos(producto);
 }
+
+
+
+
+
 
 listadoProductos.generateHtml();

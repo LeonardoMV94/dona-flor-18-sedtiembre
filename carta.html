@@ -52,21 +52,166 @@
 
 
 
-    <!-- section recomendaciones-->
-    <section class="p-3 border-top ">
-        <h3 class="text-center fw-bold mt-4">¿Quieres dejarnos tu recomendación?</h3>
-        <p class="text-center">Tus opiniones, reseñas y críticas son fundamentales para mejorar y hacer crecer
-            nuestro restaurante.<br> ¡Nos encantaría saber qué piensas!</p>
-        <center>
-            <button class="btn btn-block btn-outline-light btn-dark">
-                <a href="contacto.html" class="text-decoration-none text-white">
-                    Contactanos
-                </a>
-            </button>
-        </center>
-        <br>
-        <hr style="width: 50%; margin: auto;">
-    </section>
+   <!-- section dias faltantes para el 18-->
+  <section class="p-3 border-top ">
+    <hr>
+    <h3 class="text-center fw-bold mt-4">Faltan <span id="dias-18"></span> para el 18 !!</h3>
+    <hr>
+  </section>
+
+  <section id="shopping-cart" style="display: none;">
+    <h2 class="text-white">Carrito de Compras</h2>
+    <ul id="cart-items">
+      <!-- Los elementos agregados al carrito se mostrarán aquí -->
+    </ul>
+    <p id="cart-total" class="text-white">Total: $0</p>
+  </section>
+
+  <!-- section Francisco-->
+  <section id="section">
+    <div id="listado-productos" class="row row-cols-1 row-cols-md-4 g-4">
+      <!-- <div class="col">
+        <div class="card h-100">
+          <img src="assets/img/anticucho.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Anticuchos</h5>
+            <p class="card-text">Brochetas de carne marinada, típicamente corazón de vacuno, asadas a la parrilla.</p>
+            <p class="card-price">Precio</p>
+            <a href="#" class="btn btn-primary">Agregar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="assets/img/asado.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Asado</h5>
+            <p class="card-text">Carne a la parrilla, frecuentemente de vacuno, cocida lentamente sobre brasas..</p>
+            <p class="card-price">Precio</p>
+            <a href="#" class="btn btn-primary">Agregar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="assets/img/carbonada.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Carbonada</h5>
+            <p class="card-text">Guiso de carne, zapallo, papas, y verduras en un caldo sabroso.</p>
+            <p class="card-price">Precio</p>
+            <a href="#" class="btn btn-primary">Agregar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="assets/img/charquican.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Charquican</h5>
+            <p class="card-text">Guiso de carne seca desmenuzada, papas, zapallo y verduras, cocido junto con especias.
+            </p>
+            <p class="card-price">Precio</p>
+            <a href="#" class="btn btn-primary">Agregar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="assets/img/choripan.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Choripan</h5>
+            <p class="card-text">Pan con chorizo a la parrilla, a menudo acompañado de pebre (salsa de tomate y
+              cilantro).</p>
+            <p class="card-price">Precio</p>
+            <a href="#" class="btn btn-primary">Agregar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="assets/img/cordero.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cordero asado</h5>
+            <p class="card-text">Carne de cordero cocida a la parrilla o al horno, con un sabor ahumado y jugoso,
+              frecuentemente sazonada con hierbas y especias.</p>
+            <p class="card-price">Price: $110</p>
+            <a href="#" class="btn btn-primary">Agregar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="assets/img/empanadas.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Empanadas</h5>
+            <p class="card-text">Masa rellena con carne, cebolla y huevo, luego horneada o frita.</p>
+            <p class="card-price">Precio</p>
+            <a href="#" class="btn btn-primary">Agregar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="assets/img/humitas.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Humitas</h5>
+            <p class="card-text">Masa de maíz cocida al vapor, mezclada con cebolla y albahaca, envuelta en hojas de
+              maíz.</p>
+            <p class="card-price">Precio</p>
+            <a href="#" class="btn btn-primary">Agregar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="assets/img/pasteldeChoclo.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pastel de Choclo</h5>
+            <p class="card-text">Pastel de carne (vacuno y pollo) cubierto con un puré de maíz dulce, horneado hasta
+              dorarse.</p>
+            <p class="card-price">Precio</p>
+            <a href="#" class="btn btn-primary">Agregar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="assets/img/sopaipillas.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sopaipillas</h5>
+            <p class="card-text">Masa frita de zapallo, crujiente por fuera y suave por dentro, a menudo servida con
+              pebre o azúcar.</p>
+            <p class="card-price">Precio</p>
+            <a href="#" class="btn btn-primary">Agregar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="assets/img/terremoto.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Terremoto</h5>
+            <p class="card-text">Cóctel chileno hecho con pipeño (vino dulce), helado de piña y un toque de granadina,
+              servido en un vaso grande.p>
+            <p class="card-price">Precio</p>
+            <a href="#" class="btn btn-primary">Agregar</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="assets/img/choripan.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+              additional content. This content is a little bit longer.</p>
+            <p class="card-price">Precio</p>
+            <a href="#" class="btn btn-primary">Agregar</a>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </section>
 
 
     <!-- footer -->

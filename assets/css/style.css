@@ -335,3 +335,16 @@ footer .btn:hover {
   background-color: #0056b3;
 }
 
+
+/* Estilos para la sección de imagen */
+.image-section {
+  padding: 20px 0; /* Espaciado arriba y abajo */
+  text-align: center;
+}
+
+.image-section img {
+  width: 300%;
+  height: 800px;
+  border-radius: 8px; /* Opcional: añade bordes redondeados a la imagen */
+}
+

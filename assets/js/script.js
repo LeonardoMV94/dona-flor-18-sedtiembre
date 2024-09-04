@@ -73,6 +73,7 @@ class ListadoProductos {
                             <div class="card-body">
                                 <h5 class="card-title">${producto.nombre}</h5>
                                 <p class="card-text">${producto.descripcion}</p>
+                                <p class="card-category">Categoría: ${producto.categoria}</p>
                                 <p class="card-price">Precio: ${producto.precio}</p>
                                 <a href="#" class="btn btn-primary">Agregar</a>
                             </div>
@@ -287,11 +288,24 @@ const productos = [
   urlImagen: "assets/img/piscoSour.jpg",
   descripcion: "El pisco sour es un cóctel preparado con pisco y zumo de limón.", 
  precio: 3000 ,
- categoria: "Bebidas"
+ categoria: "Bebestibles"
 },
 
+{
+  nombre: "Piso Sour",
+  urlImagen: "assets/img/piscoSour.jpg",
+  descripcion: "El pisco sour es un cóctel preparado con pisco y zumo de limón.", 
+ precio: 3000 ,
+ categoria: "Bebestibles"
+},
 
-
+{
+  nombre: "Melon con Vino",
+  urlImagen: "assets/img/melvin.webp",
+  descripcion: "Vino Tinto ", 
+ precio: 3000 ,
+ categoria: "Bebestibles"
+},
 ];
 
 //crear el carrito -> esto se hace en query.js o se refactoriza y se migra a javascript puro

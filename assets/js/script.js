@@ -360,8 +360,8 @@ function agregarPorIndex(indice) {
     li.textContent = `${carrito.productos[i].producto.nombre} | $${carrito.productos[i].producto.precio} | x${carrito.productos[i].cantidad}`;
     listadoCarrito.appendChild(li);
   }
-  console.log("obtener total: ", carrito.obtenerTotal())
-  total.innerHTML = `Total: $${carrito.obtenerTotal()}`
+  console.log("obtener total: ", carrito.obtenerTotal(), new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(carrito.obtenerTotal()))
+  total.innerHTML = `Total: ${new Intl.NumberFormat('es-CL', {currency: 'CLP', style: 'currency'}).format(carrito.obtenerTotal())}`
 }
 
 // crear html de Productos
